@@ -1,10 +1,8 @@
 inoremap jk <ESC>
 
 " show nerdtree
-nmap <C-t> :NERDTreeToggle<CR>
-nmap <C-f> :NERDTreeFocus<CR>
-vmap ++ <plug>NERDCommenterToggle
-nmap ++ <plug>NERDCommenterToggle
+nmap <C-t> :Rg<CR>
+nmap <C-f> :Files<CR>
 
 " exit and save
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
@@ -123,4 +121,4 @@ nmap <silent> gr <Plug>(coc-references)
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
-
+nmap <S-p> :Files<CR>

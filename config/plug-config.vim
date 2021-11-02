@@ -1,10 +1,3 @@
-" open NERDTree automatically
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * NERDTree
-
-let g:NERDTreeGitStatusWithFlags = 1
-let g:NERDTreeIgnore = ['^node_modules$']
-
 " vim-prettier
 "let g:prettier#quickfix_enabled = 0
 "let g:prettier#quickfix_auto_focus = 0
@@ -50,7 +43,8 @@ let g:coc_global_extensions = [
   \ 'coc-python',
   \ 'coc-rust-analyzer',
   \ 'coc-rls',
-  \ 'coc-clangd'
+  \ 'coc-clangd',
+  \ 'coc-java'
   \ ]
 
 function! s:show_documentation()
@@ -94,3 +88,5 @@ let g:airline#extensions#tabline#formatter = 'default'
 let g:ale_completion_enabled = 0
 let g:ale_linters = {'python': ['flake8', 'pylint'], 'javascript': ['eslint']}
 
+
+" config fzf
